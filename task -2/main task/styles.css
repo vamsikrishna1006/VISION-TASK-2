@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&diaplay=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.sidebar{
+   position: absolute;
+   background-color:rgb(60, 100, 150);
+   font-family: sans-serif;
+   height: 100vh;
+   transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 40px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 22px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.main{
+    width: 80vw;
+    height: 100px;
+}
+.container{
+    display: flex;   
+}
+.information{
+    height: 58vh;
+    width: 80vw;
+    margin: 144px 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.devPic img{
+    height: 38vh;   
+    border-radius: 20px;
+}
+.devInfo{
+    margin-top: 120px;
+    margin-left: 300px;
+    font-size: 2em;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.para{
+    font-size: 1em;
+    
+}
+.para2{
+    font-size: 20px;
+}
+.buttons{
+    margin-top: 2.2em;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(60, 100, 150);
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3 3px;
+    cursor: pointer;
+}
+
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(60, 100, 150);
+}
+
+.hamburger{
+    
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross{
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+
+
+.skillcontainer{
+    padding: 12px; 
+    margin: 20px;  
+}
+.skillItem{
+    display: flex;
+    margin: 12px 120px;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+.intro{
+    margin: 40px 88px;
+}
+.intro h2{
+    font-family: sans-serif;
+    margin: 12px 120px;
+}
+.intro p{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 12px 120px;
+}
+.hundred{
+    width: 265px;
+}
+.fifty{
+    width: 125px;
+    background-color: red;
+}
+.t5{
+    width: 150px;
+    background-color: red;
+}
+.JAVA{
+    width: 125px;
+    background-color: red;
+}
+.sidebarGo{
+    transform: translate(-443px,0);
+    position: absolute;
+}
+
+/* contact form */
+
+.contactform{
+    
+    padding:  34px;
+    font-family: sans-serif;
+    margin:48px;
+}
+.contactform h1{
+    font-family: sans-serif;
+}
+.contactform form  div{
+    padding: 10px 0;
+    display:flex ;
+    flex-direction: column;
+}
+.contactform form  div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 2px 0 0;
+    padding: 20px;
+}
+.contactform form{
+    margin: 0 40px;}
+#emailHelp{
+    font-size: 11px;
+    color: rgb(60, 100, 150);
+    margin: 0 5px;
+    padding: 3px 0 0;
+}
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+
+
+@media (max-width: 715px){
+
+    .buttons{
+        font-size: 6px;
+    }
+    .devInfo{
+        font-size: 10px;margin-top: -120px;
+    }
+
+    .information{
+        margin: 20px;
+    }
+    
+    .devPic{display: none;}
+    .intro, .blogContainer, .contactform{
+        margin:50px 8px;
+    }
+    .contactform{
+        padding-right: 10px;
+    }
+
+
+}
+
+
+
